@@ -1,4 +1,4 @@
-package dev.syncended.whois
+package dev.syncended.whois.tld
 
 object TldUtils {
     private val TopLevelDomain.nicServer: String

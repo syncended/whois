@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.1.0"
+    alias(libs.plugins.kotlin.jvm)
 }
 
 group = "dev.syncended.whois"
@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.commons.net)
     testImplementation(kotlin("test"))
 }
 

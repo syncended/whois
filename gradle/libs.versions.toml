@@ -1,0 +1,9 @@
+[versions]
+kotlin = "2.1.10"
+commons-net = "3.11.1"
+
+[libraries]
+commons-net = { module = "commons-net:commons-net", version.ref = "commons-net" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

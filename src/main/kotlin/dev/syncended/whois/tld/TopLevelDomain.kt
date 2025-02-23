@@ -1,4 +1,4 @@
-package dev.syncended.whois
+package dev.syncended.whois.tld
 
 /**
  * Enum of top level domains.
