@@ -5,6 +5,8 @@ commons-net = "3.11.1"
 junit = "5.12.0"
 kotest = "5.9.1"
 
+jreleaser = "1.16.0"
+
 [libraries]
 commons-net = { module = "commons-net:commons-net", version.ref = "commons-net" }
 
@@ -16,3 +18,5 @@ kotest-junit = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "k
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+jreleaser = { id = "org.jreleaser", version.ref = "jreleaser" }
