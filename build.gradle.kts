@@ -11,7 +11,10 @@ repositories {
 
 dependencies {
     implementation(libs.commons.net)
-    testImplementation(kotlin("test"))
+    testImplementation(libs.junit.engine)
+    testImplementation(libs.junit.params)
+    testImplementation(libs.kotest.assertions)
+    testImplementation(libs.kotest.junit)
 }
 
 tasks.test {

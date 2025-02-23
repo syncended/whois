@@ -27,6 +27,7 @@ data class WhoisRequest(
             val whoisServer = TldUtils.getWhoisServer(tld)
 
             whoisClient.defaultTimeout = timeout
+            whoisClient.connectTimeout = timeout
             whoisClient.connect(whoisServer)
             whoisClient.query(domain)
         }.also { runCatching { whoisClient.disconnect() } }
