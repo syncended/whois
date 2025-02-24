@@ -6,6 +6,8 @@ plugins {
     `maven-publish`
 }
 
+group = "dev.syncended.whois"
+
 repositories {
     mavenCentral()
 }
