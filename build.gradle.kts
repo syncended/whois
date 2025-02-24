@@ -128,8 +128,7 @@ private fun stagingDir(): File {
 }
 
 private fun releaseVersion(): String {
-    return System.getenv("RELEASE_VERSION")
-        ?: "${System.currentTimeMillis()}-SNAPSHOT"
+    return "0.0.0"
 }
 
 private fun mavenUsername(): String {
