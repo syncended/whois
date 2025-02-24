@@ -4,9 +4,11 @@ plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.jreleaser)
     `maven-publish`
+    `java-library`
 }
 
 group = "dev.syncended.whois"
+version = releaseVersion()
 
 repositories {
     mavenCentral()
@@ -123,15 +125,6 @@ jreleaser {
 
 private fun stagingDir(): File {
     return layout.buildDirectory.dir("staging").get().asFile
-}
-
-private fun mavenRepository(): String {
-    val hasReleaseVer = System.getenv("RELEASE_VERSION") != null
-    return if (hasReleaseVer) {
-        "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
-    } else {
-        "https://s01.oss.sonatype.org/content/repositories/snapshots/"
-    }
 }
 
 private fun releaseVersion(): String {
