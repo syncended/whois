@@ -27,7 +27,7 @@ jobs:
       - name: Publish libraries
         run: |
           ./gradlew :publish
-          ./gradlew :jreleaserFullRelease
+          ./gradlew :jreleaserFullRelease --stacktrace
         env:
           RELEASE_VERSION: ${{ github.event.inputs.tag }}
           GPG_PUBLIC_KEY: ${{ secrets.GPG_PUBLIC_KEY }}
