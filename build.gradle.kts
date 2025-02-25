@@ -108,6 +108,7 @@ jreleaser {
 
                     username = mavenUsername()
                     password = mavenPassword()
+                    retryDelay = 60
                 }
             }
         }
