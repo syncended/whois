@@ -40,5 +40,5 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "*/build/libs/*.jar"
-          bodyFile: "changelog.md"
+          bodyFile: "changelog.md.md"
           tag: v${{ github.event.inputs.tag }}
