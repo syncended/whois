@@ -7,7 +7,7 @@ plugins {
     `java-library`
 }
 
-group = "dev.syncended.whois"
+group = "dev.syncended"
 version = releaseVersion()
 
 repositories {
